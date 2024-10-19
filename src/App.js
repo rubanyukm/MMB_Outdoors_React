@@ -1,24 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+
+import { HashRouter as Router, Routes, Route } from 'react-router-dom';
+import './css/App.css';
+import { Test } from './pages/test.js';
+import { Layout } from './Layout.js'
+import { keepTheme } from './utils/themes';
+import { useEffect } from 'react';
 
 function App() {
+  useEffect(() => {
+    keepTheme();
+  })
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Routes>
+        <Route element={<Layout />}>
+          <Route path="/" element={<Test id="root"/>}/>
+        </Route>
+      </Routes>
+    </Router>
   );
 }
 

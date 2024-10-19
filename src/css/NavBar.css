@@ -1,0 +1,13 @@
+.NavBar-div {
+    grid-area: Navbar-div;
+    margin: auto;
+    padding: 10px;
+    text-align: center;
+    width: 50%;
+    border: 5px solid red;
+  }
+
+.NavBar-div a {
+    text-align: center;
+    border: 50px solid black;
+}

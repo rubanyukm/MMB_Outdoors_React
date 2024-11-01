@@ -26,23 +26,13 @@ export function Toggle() {
 
     if (localStorage.getItem('theme') === 'theme-dark') {
         return (
-            <div className="container--toggle">
-                <button onClick={handleOnClick}>Toggle Light Mode</button>
-                <label htmlFor="toggle" className="toggle--label">
-                    <span className="toggle--label-background"></span>
-                </label>
-            </div>
+            <button className='button-80' onClick={handleOnClick}>Light Mode</button>
             
         )
     } else if (localStorage.getItem('theme') === 'theme-light') {
         return (
-            <div className="container--toggle">
-                <button onClick={handleOnClick}>Toggle Dark Mode</button>
-                <label htmlFor="toggle" className="toggle--label">
-                    <span className="toggle--label-background"></span>
-                </label>
-            </div>
-            
+            <button className='button-80' onClick={handleOnClick}>Dark Mode</button>
+
         )
     }
     

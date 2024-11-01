@@ -7,10 +7,10 @@ export function NavBar() {
     return (
         <div id="NavBar-div">
             <Link className="Link" to="/">
-                <button>Test</button>
+                <button className='button-80'>Test</button>
             </Link>
             <Link className="Link">
-                <Toggle />
+                <Toggle/>
             </Link>
         </div>
     );

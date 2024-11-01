@@ -11,9 +11,9 @@
   .theme-light {
     --dark-text: #000000;
     --light-text: #000000;
-    --dark-background: #DBE7E4;
+    --dark-background: #ffffff;
     --light-background: #EDDCD2;
-    --accent: #DBE7E4;
+    --accent: #ffffff;
     --button-border: #5E4B56;
     --link-color: #EA2C15;
   }

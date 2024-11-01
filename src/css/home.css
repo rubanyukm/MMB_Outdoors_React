@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+#home-div {
+  display: grid; 
+  grid-template-columns: repeat(5, auto); /* or a specific value */
+  grid-template-rows: repeat(5, auto);
+  gap: 0px 0px; 
+  grid-template-areas: 
+    ". . home-h1 . ."
+    ". .  mmb-h2 . ."
+    ". . group-photo . ."
+    ". . home-p . ."
+    ". . . . ."; 
+  width: 100%;
+  
+  margin: 0 auto;
+  height: fit-content;
+}
+
+.home-h1 { 
+  grid-area: home-h1; 
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+.mmb-h2 {
+  grid-area: mmb-h2; 
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+.group-photo {
+  grid-area: group-photo;
+  padding: 0;
+  margin: auto;
+  width: 900px; /* Adjust based on grid cell size */
+  height: min-content;
+  border: 3px solid black;
+}
+
+.home-p {
+  grid-area: home-p;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  font-size: large;
+}

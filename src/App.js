@@ -1,10 +1,15 @@
 
-import { HashRouter as Router, Routes, Route } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route, BrowserRouter } from 'react-router-dom';
 import './css/App.css';
-import { Test } from './pages/test.js';
+import Home from './pages/home.js';
 import { Layout } from './Layout.js'
 import { keepTheme } from './utils/themes';
 import { useEffect } from 'react';
+import Header from './components/Header.js';
+import React, { Component } from 'react';
+import Gallery from './pages/gallery.js';
+import NoPage from './pages/NoPage.js';
+
 
 function App() {
   useEffect(() => {
@@ -12,13 +17,15 @@ function App() {
   })
 
   return (
-    <Router>
+    <div>
+      <Header />
       <Routes>
-        <Route element={<Layout />}>
-          <Route path="/" element={<Test id="root"/>}/>
-        </Route>
+        <Route index element={<Home />} />
+        <Route path="/home" element={<Home />} />
+        <Route path="/gallery" element={<Gallery />} />
+        <Route path="*" element={<NoPage />} />
       </Routes>
-    </Router>
+    </div>
   );
 }
 

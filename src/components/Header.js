@@ -2,7 +2,7 @@ import React from 'react';
 import { BrowserRouter, Link } from "react-router-dom";
 import '../css/header.css';
 import { Toggle } from '../components/Toggle.js';
-import { Home } from '../pages/home.js';
+import { Home } from '../pages/Home.js';
 
 const Header = () => {
   return (
@@ -15,7 +15,7 @@ const Header = () => {
                 <Link to='/home'><button className='button-80'>Home</button></Link>
             </li>
             <li>
-            <button className='button-80'>Trips</button>
+                <Link to='/trips'><button className='button-80'>Trips</button></Link>
             </li>
             <li>
             <button className='button-80'>Resources</button>

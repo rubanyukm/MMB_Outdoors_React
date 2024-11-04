@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+#trips-div {
+    display: grid; 
+    grid-template-columns: repeat(5, auto); /* or a specific value */
+    grid-template-rows: repeat(5, auto);
+    gap: 0px 0px;
+    grid-template-areas: 
+        ". . trips-h1 . ."
+        ". Indian-Head Indian-Head Indian-Head ."
+        ". Indian-Test Indian-Test Indian-Test ."
+        ". . . . ."
+        ". . . . ."; 
+    width: 100%;
+    margin: 0 auto;
+    height: fit-content;
+}
+
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+.Indian-Head {
+    grid-area: Indian-Test;
+    margin-top: 20px;
+}
+
+.trips-h1 {
+    grid-area: trips-h1; 
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}

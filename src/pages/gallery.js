@@ -4,7 +4,7 @@ import "react-photo-album/rows.css";
 import { useState } from "react";
 import Lightbox from "yet-another-react-lightbox";
 import "yet-another-react-lightbox/styles.css";
-import { slides } from '../utils/data';
+import { slides } from '../utils/data.js';
 import Images from '../components/Images.tsx';
 
 //optional plugins
@@ -19,26 +19,27 @@ export default function Gallery() {
 
     return (
         <>
-        <Images
-        data={slides}
-        onClick={(currentIndex) => setIndex(currentIndex)}
-      />
+            <h1>Trip Photos</h1>
+            <Images
+            data={slides}
+            onClick={(currentIndex) => setIndex(currentIndex)}
+            />
 
-      <Lightbox
-        plugins={[Fullscreen, Zoom, Thumbnails]}
-        captions={{
-          showToggle: true,
-          descriptionTextAlign: 'end',
-        }}
-        // open={open}
-        // close={() => setOpen(false)}
+            <Lightbox
+            plugins={[Fullscreen, Zoom, Thumbnails]}
+            captions={{
+                showToggle: true,
+                descriptionTextAlign: 'end',
+            }}
+            // open={open}
+            // close={() => setOpen(false)}
 
-        index={index}
-        open={index >= 0}
-        close={() => setIndex(-1)}
-        slides={slides}
-      />
-      </>
+            index={index}
+            open={index >= 0}
+            close={() => setIndex(-1)}
+            slides={slides}
+            />
+        </>
     )
 
 }

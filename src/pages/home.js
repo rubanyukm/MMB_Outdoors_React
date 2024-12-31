@@ -7,7 +7,7 @@ export default function Home() {
                 <h1 className='home-h1'>Welcome</h1>
                 <h2 className='mmb-h2'>MMB Outdoors</h2>
                 <img className='group-photo' src={require('../images/group.jpg')} />
-                <p className='home-p'>Website for us to track our trips and outdoor hobbies</p>
+                <p className='home-p'>Backpacking Hobby Site</p>
             </div>
         </body>
     )

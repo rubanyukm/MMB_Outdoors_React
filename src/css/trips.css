@@ -1,18 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 #trips-div {
-    display: grid; 
-    grid-template-columns: repeat(5, auto); /* or a specific value */
-    grid-template-rows: repeat(5, auto);
-    gap: 0px 0px;
-    grid-template-areas: 
-        ". . trips-h1 . ."
-        ". Indian-Head Indian-Head Indian-Head ."
-        ". Indian-Test Indian-Test Indian-Test ."
-        ". . . . ."
-        ". . . . ."; 
-    width: 100%;
+    display: grid;
+    grid-template-columns: 2fr 3fr 2fr; /* Balanced columns for image, description, iframe */
+    gap: 20px; /* Space between columns */
+    width: 98%;
+    max-width: 1600px;
     margin: 0 auto;
-    height: fit-content;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
 }
 
 * {
@@ -20,13 +17,28 @@
 }
 
 .Indian-Head {
-    grid-area: Indian-Test;
-    margin-top: 20px;
+    grid-column: 2 / 3;
+    align-self: start;
+    color:#333;
 }
 
 .trips-h1 {
-    grid-area: trips-h1; 
+    grid-column: 1 / -1; /* Center the header across all columns */
     text-align: center;
-    padding: 0;
-    margin: 0;
+    margin-bottom: 20px;
+    font-size: 2.5em;
+    color: #333;
+}
+
+.image-div {
+    grid-column: 1 / 2; /* First column for the image */
+    align-self: center;
+}
+
+.image-div img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }

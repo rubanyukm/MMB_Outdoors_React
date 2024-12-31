@@ -9,7 +9,6 @@ import Images from '../components/Images.tsx';
 
 //optional plugins
 import Fullscreen from "yet-another-react-lightbox/plugins/fullscreen";
-import Slideshow from "yet-another-react-lightbox/plugins/slideshow";
 import Thumbnails from "yet-another-react-lightbox/plugins/thumbnails";
 import Zoom from "yet-another-react-lightbox/plugins/zoom";
 import "yet-another-react-lightbox/plugins/thumbnails.css";
@@ -19,7 +18,7 @@ export default function Gallery() {
 
     return (
         <>
-            <h1>Trip Photos</h1>
+            <h1>Photo Gallery</h1>
             <Images
             data={slides}
             onClick={(currentIndex) => setIndex(currentIndex)}

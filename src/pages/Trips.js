@@ -11,9 +11,14 @@ export default function Trips() {
         <body>
             <div id="trips-div">
                 <h1 className='trips-h1'>Trips</h1>
-                <div className='Indian-Head'>
-                    <Trails trailDesc={IndianDesc} trailTitle={IndianTitle} trailSrc={IndianSrc}/>
+                <div className='image-div'>
+                    <img src='/gallery/ADK/20.jpg' alt='Indian Head Hike'></img>
                 </div>
+                <div className='Indian-Head'>
+                    <h2>{IndianTitle}</h2>
+                    <p>{IndianDesc}</p>
+                </div>
+                <iframe className="Trail" src={IndianSrc} title="Trail Map"></iframe>
             </div>
         </body>
     )

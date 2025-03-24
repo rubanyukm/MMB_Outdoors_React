@@ -24,15 +24,19 @@ export function Toggle() {
         }
     }, [theme])
 
-    if (localStorage.getItem('theme') === 'theme-dark') {
+    if (togClass === 'dark') {
         return (
-            <button className='button-80' onClick={handleOnClick}>Light Mode</button>
-            
+            <label class="switch">
+            <input type="checkbox" onClick={handleOnClick}/>
+            <span class="slider round"></span>
+            </label>
         )
-    } else if (localStorage.getItem('theme') === 'theme-light') {
-        return (
-            <button className='button-80' onClick={handleOnClick}>Dark Mode</button>
-
+    } else if (togClass === 'light') {
+        return ( 
+            <label class="switch">
+            <input type="checkbox" onClick={handleOnClick}/>
+            <span class="slider round"></span>
+            </label>
         )
     }
     

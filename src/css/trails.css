@@ -1,5 +1,4 @@
 .Trail-Div {
-    margin: auto;
     display: grid;
     grid-template-columns: 3fr 2fr; /* Description and iframe in first column, image in the second */
     grid-template-rows: auto auto; /* Two rows: description + iframe */
@@ -9,8 +8,7 @@
     margin: 0 auto;
     padding: 20px;
     background-color: #fff;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
+    /*box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);*/
 }
 
 .Trail-TextContainer {

@@ -15,7 +15,7 @@ const Header = () => {
                 <Link to='/home'><button className='button-80'>Home</button></Link>
             </li>
             <li>
-                <Link to='/trips'><button className='button-80'>Trips</button></Link>
+                <Link to='/trips'><button className='button-80'>Trails</button></Link>
             </li>
             <li>
             <button className='button-80'>Resources</button>

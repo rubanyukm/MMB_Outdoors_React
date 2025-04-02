@@ -26,6 +26,13 @@ export default function Trips() {
         trailSrc: 'https://www.alltrails.com/widget/trail/us/montana/highline-trail?u=i&sh=dxd3vd',
     };
 
+    const Algonquin = {
+        imageSrc: '/gallery/ADK/31.jpg',
+        trailTitle: 'Algonquin Peak',
+        trailDesc: `The Algonquin Peak and Wright Peak via Algonquin Trail is a steep, rugged climb through dense Adirondack forest that opens up to stunning alpine landscapes. As you ascend, the trail transitions from wooded paths to exposed rocky summits with sweeping views of the surrounding High Peaks. Wright Peak offers a breathtaking preview, while Algonquin Peak—New York’s second-highest—rewards hikers with panoramic vistas and a taste of rare alpine tundra. The scenery is dramatic, wild, and truly unforgettable.`,
+        trailSrc: 'https://www.alltrails.com/widget/trail/us/new-york/algonquin-peak-and-wright-peak-via-algonquin-trail?u=i&sh=dxd3vd',
+    };
+
     return (
         <body>
             <h1 className="trips-h1">Trails</h1>
@@ -46,6 +53,12 @@ export default function Trips() {
             trailTitle={Highline.trailTitle}
             trailDesc={Highline.trailDesc}
             trailSrc={Highline.trailSrc}
+            />
+            <Trails 
+            imageSrc={Algonquin.imageSrc}
+            trailTitle={Algonquin.trailTitle}
+            trailDesc={Algonquin.trailDesc}
+            trailSrc={Algonquin.trailSrc}
             />
         </body>
     )
